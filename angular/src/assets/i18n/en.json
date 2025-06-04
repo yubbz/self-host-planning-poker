@@ -36,7 +36,9 @@
     "MODIFIED_FIBONACCI": "Modified Fibonacci",
     "POWERS": "Powers of 2",
     "TRUST_VOTE": "Trust Vote",
-    "T_SHIRTS": "T-Shirt Sizes"
+    "T_SHIRTS": "T-Shirt Sizes",
+    "ROBOT": "Robot",
+    "VODA_FIBONACCI": "Vodacom Fibonacci"
   },
   "ongoingGame": {
     "page-title": "Planning Poker {{gameName}}"

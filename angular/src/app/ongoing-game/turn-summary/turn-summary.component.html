@@ -20,12 +20,12 @@
         {{
         deck.textValues
         ? displayCardValue(deck, round(average)) || '−'
-        : (average | translocoDecimal: { maximumFractionDigits: 1 })
+        : (average | translocoDecimal: { maximumFractionDigits: 2 })
         }}
       </p>
       <p class="text-muted mb-1">{{ t('agreement-label') }}</p>
       <p class="fs-2 fw-bold" #agreementElement [ngClass]="agreementClass()">{{
-        agreement === 0 ? '−' : agreement | translocoPercent: { maximumFractionDigits: 0 }
+        agreement === 0 ? '−' : agreement | translocoPercent: { maximumFractionDigits: 1 }
         }}</p>
     </div>
   </div>

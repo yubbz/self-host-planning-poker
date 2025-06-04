@@ -11,6 +11,33 @@ export interface Deck {
 
 export const decks: Deck[] = [
   {
+    name: 'VODA_FIBONACCI',
+    textValues: false,
+    values: [
+      { value: 0, display: 0 },
+      { value: 0.25, display: 0.25 },
+      { value: 0.5, display: 0.5 },
+      { value: 1, display: 1 },
+      { value: 2, display: 2 },
+      { value: 3, display: 3 },
+      { value: 5, display: 5 },
+      { value: 8, display: 8 },
+      { value: 13, display: 13 },
+      { value: 20, display: 20 },
+      { value: 40, display: 40 },
+      { value: 100, display: 100 },
+    ]
+  },
+  {
+    name: 'ROBOT',
+    textValues: true,
+    values: [
+      { value: 1, display: 'Red' },
+      { value: 2, display: 'Orange' },
+      { value: 3, display: 'Green' },
+    ]
+  },
+  {
     name: 'FIBONACCI',
     textValues: false,
     values: [
@@ -82,7 +109,8 @@ export const decks: Deck[] = [
       { value: 6, display: 'XL' },
       { value: 7, display: 'XXL' },
     ]
-  }
+  },
+
 ]
 
 export const decksDict: { [key: string]: Deck } = decks.reduce((result: { [key: string]: Deck }, deck: Deck) => {
